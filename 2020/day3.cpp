@@ -73,40 +73,37 @@ What do you get if you multiply together the number of trees encountered on each
 
 int treesOnSlope(int xVel, int yVel)
 {
-    int numRows = 323;
-    int x = 0;
-
     std::ifstream file("day3.txt");
     std::string value;
+	std::getline(file, value);
 
-    std::getline(file, value);
-
-    int numColumns = value.length();
+	int numLines = 323;
+	int x = 0;
     int numTrees = 0;
 
-    for(int i = 1; i < numRows; i++)
+    for(int i = 0; i < numLines; i+=yVel)
     {
-        x += xVel;
+		numTrees += (value[x] == '#');
 
-        for(int i = 0; i < yVel; i++)
+		for(int j = 0; j < yVel; j++)
         {
-            std::getline(file, value);
+			std::getline(file, value);
         }
 
-        if(x >= numColumns)
-        {
-            x = x-numColumns;
-        }
+		x += xVel;
 
-        numTrees += (value[x] == '#');
+		if(x >= value.length())
+		{
+			x -= value.length();
+		}
     }
 
+	file.close( );
     return numTrees;
 }
 
 int main()
 {
-    std::cout << "Part 1: " << treesOnSlope(3, 1) << std::endl;
-    unsigned long long multipliedValues = treesOnSlope(1, 1) * treesOnSlope(3, 1) * treesOnSlope(5, 1) * treesOnSlope(7, 1) * treesOnSlope(1, 2);
-    std::cout << "Part 2: " << multipliedValues << std::endl; 
+	std::cout << "Part 1: " << treesOnSlope(3, 1) << std::endl;
+    std::cout << "Part 2: " << treesOnSlope(1, 1) * treesOnSlope(3, 1) * treesOnSlope(5, 1) * treesOnSlope(7, 1) * treesOnSlope(1, 2) << std::endl;
 }
