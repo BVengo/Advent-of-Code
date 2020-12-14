@@ -40,6 +40,15 @@
         "xtr1common": "cpp",
         "xutility": "cpp",
         "cctype": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "map": "cpp",
+        "xtree": "cpp",
+        "algorithm": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "list": "cpp",
+        "sstream": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }
