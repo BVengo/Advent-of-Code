@@ -92,7 +92,7 @@ std::vector<int> getTicketValues(std::string ticket) {
 }
 
 void initialise() {
-    std::ifstream file("day16.txt");
+    std::ifstream file("../input/day16.txt");
     std::string row;
     std::getline(file, row);
     

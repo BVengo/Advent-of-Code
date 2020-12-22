@@ -78,7 +78,7 @@ std::vector<Bag> bags;
 
 void initialiseMap()
 {
-    std::ifstream file("day7.txt");
+    std::ifstream file("../input/day7.txt");
     std::string rule;
 
     while(std::getline(file, rule))

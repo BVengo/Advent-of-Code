@@ -84,7 +84,7 @@ For each group, count the number of questions to which everyone answered "yes". 
 
 int part1()
 {
-    std::ifstream file("day6test.txt");
+    std::ifstream file("../input/day6.txt");
     std::string row;
 
     int count = 0;
@@ -119,7 +119,7 @@ int part1()
 
 int part2()
 {
-    std::ifstream file("day6test.txt");
+    std::ifstream file("../input/day6.txt");
     std::string row;
 
     int count = 0;

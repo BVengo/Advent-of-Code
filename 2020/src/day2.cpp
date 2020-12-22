@@ -47,7 +47,7 @@ int main()
     int oldCorrectCount = 0;
     int newCorrectCount = 0;
 
-    std::ifstream file("day2.txt");
+    std::ifstream file("../input/day2.txt");
 
     
 

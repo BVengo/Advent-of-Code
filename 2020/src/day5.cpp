@@ -91,7 +91,7 @@ int binarySearch(std::string value, int max, int min, char maxChar, char minChar
 
 int part1()
 {
-    std::ifstream file("day5.txt");
+    std::ifstream file("../input/day5.txt");
     std::string value;
 
     while(std::getline(file, value))

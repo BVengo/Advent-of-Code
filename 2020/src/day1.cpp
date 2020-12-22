@@ -42,7 +42,7 @@ int main()
     int numValues = 200;
     int *numbers = new int[numValues];
 
-    std::ifstream file("day1.txt");
+    std::ifstream file("../input/day1.txt");
 
     for(int i = 0; i < numValues; i++)
     {

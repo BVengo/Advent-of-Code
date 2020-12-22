@@ -118,7 +118,7 @@ In your batch file, how many passports are valid?
 
 int main()
 {
-	std::ifstream file("day4.txt");
+	std::ifstream file("../input/day4.txt");
     std::string row;
 
 	std::string values[] = {"byr:", "iyr:", "eyr:", "hgt:", "hcl:", "ecl:", "pid:"};

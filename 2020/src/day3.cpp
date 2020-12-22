@@ -73,7 +73,7 @@ What do you get if you multiply together the number of trees encountered on each
 
 int treesOnSlope(int xVel, int yVel)
 {
-    std::ifstream file("day3.txt");
+    std::ifstream file("../input/day3.txt");
     std::string value;
 	std::getline(file, value);
 
